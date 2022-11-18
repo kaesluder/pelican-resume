@@ -4,7 +4,8 @@
     <div class="profile-container">
         {% if PIC %}<img class="profile-img" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{% if PIC %}{{ PIC }}{% endif %}" alt="profile picture" />{% endif %}
         <h1 class="name">{% if NAME %}{{NAME}}{% else %}Alan Doe{% endif %}</h1>
-        <h3 class="tagline">{% if TAGLINE %}{{TAGLINE}}{% else %}Full Stack Developer{% endif %}</h3>
+        <h4 class="pronouns"> {% if PRONOUNS %}{{PRONOUNS}}{% endif %}</h4>
+        <h3 class="tagline">{% if TAGLINE %}{{TAGLINE}}{% endif %}</h3>
     </div><!--//profile-container-->
     
     <div class="contact-container container-block">
